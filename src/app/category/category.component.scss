@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.category-section {
+  @apply p-8 bg-gray-100 min-h-screen; /* Padding, background et min-height */
+}
+
+.search-bar {
+  @apply flex space-x-4 mb-6; /* Flex layout avec un espacement entre les éléments */
+  
+  input {
+    @apply border border-gray-300 rounded-lg p-2 w-1/3; /* Style de l'input */
+  }
+
+  button {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600; /* Style du bouton */
+  }
+
+  button[type="button"] {
+    @apply bg-gray-400 hover:bg-gray-500; /* Style spécifique pour le bouton Réinitialiser */
+  }
+}
+
+.category-cards {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6; /* Grille pour les cartes */
+}
+
+.category-card {
+  @apply items-center my-4 p-12 bg-violet-100 w-full shadow-md rounded-lg  transition hover:shadow-lg cursor-pointer; /* Carte stylée avec ombre et effet au hover */
+  
+  h3 {
+    @apply text-xl text-center font-semibold text-gray-800; /* Style pour le titre de la catégorie */
+  }
+}

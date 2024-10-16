@@ -1,0 +1,29 @@
+<section class="category-section">
+    <h2>Liste des catégories</h2>
+  
+    <!-- Formulaire de recherche avec un bouton -->
+    <form (ngSubmit)="filterCategories()">
+      <div class="search-bar">
+        <input
+          type="text"
+          [(ngModel)]="searchTerm"
+          name="searchTerm"
+          placeholder="Rechercher une catégorie"
+        />
+        <button type="submit">Rechercher</button>
+        <button type="button" (click)="resetFilter()">Réinitialiser</button>
+      </div>
+    </form>
+  
+    <!-- Affichage des catégories sous forme de carte -->
+    <div class="category-cards">
+      <div
+        class="category-card"
+        *ngFor="let category of filteredCategories"
+        (click)="navigateToQuiz(category.quizzId)"
+      >
+        <h3>{{ category.categoryTitle }}</h3>
+      </div>
+    </div>
+  </section>
+  

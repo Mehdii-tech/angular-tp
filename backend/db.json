@@ -499,5 +499,22 @@
       "password": "test",
       "id": 3
     }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryTitle": "Angular",
+      "quizzId": 1
+    },
+    {
+      "id": 2,
+      "categoryTitle": "React",
+      "quizzId": 2
+    },
+    {
+      "id": 3,
+      "categoryTitle": "Vue",
+      "quizzId": 2
+    }
   ]
 }

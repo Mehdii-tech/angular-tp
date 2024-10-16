@@ -11,6 +11,7 @@ export class QuizService {
   isQuizFinished = false;
   playerName: string = '';
 
+
   constructor(private http: HttpClient) { }
 
   checkAnswers() {
